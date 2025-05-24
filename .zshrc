@@ -131,3 +131,7 @@ setopt AUTO_CD
 
 ### Enable environment variable name completion ###
 setopt AUTO_PARAM_KEYS
+
+
+### mise ###
+eval "$(mise activate zsh)"

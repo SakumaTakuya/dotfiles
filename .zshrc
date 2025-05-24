@@ -84,8 +84,8 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 # Bind Ctrl+E to move to a directory from command history
-bindkey '^E' peco-cdr
-alias d="cd $(cdr -l | sed 's/^[0-9]* *//' | peco)"
+bindkey '^E' peco-cdr/
+alias d='cd $(cdr -l | sed "s/^[0-9]* *//" | peco)'
 
 # Search and move to directories under the current directory
 function find_cd() {
